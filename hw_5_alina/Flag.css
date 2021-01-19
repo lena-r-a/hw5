@@ -1,0 +1,129 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+.flag {width: 200px;
+    height: 130px;
+    margin: 10px;
+    display: inline-block;
+    position: relative;
+}
+
+.flag:hover::after {
+    content: attr(data-title);
+    position: absolute;
+    left: 10px; top: 10px;}
+
+.latija {
+    border: 1px solid black;
+    background: linear-gradient(to bottom, #9E0A1E 40%, #fff 40%, #fff 60%, #9E0A1E 60%);
+}
+.irlandija {
+    background:linear-gradient(to right, #218321 33%, #fff 33%, #fff 67%, #E77723 67%);
+        background-repeat: no-repeat;
+         border: 1px solid black;
+}
+.finlandija {
+    background:linear-gradient(to right, white 30%, #121BB5 0%, #121BB5 40%, white 40%),
+    linear-gradient(to top, #121BB5, #121BB5),
+    linear-gradient(to right, white 30%, #121BB5 30%, #121BB5  40%,white 40%);
+    background-repeat: no-repeat;
+    background-position: 0 0,
+     0 55px,
+     0 75px;
+     background-size: 100% 56px,
+     100% 20px,
+     100% 56px;
+     border: 1px solid black;
+}
+
+.vietnam {
+    position: relative;
+    border: 1px solid black;
+    background: linear-gradient(to right, #DF0718, #DF0718); 
+}
+.star {
+    position: absolute;
+    left: 70px; top: 35px;
+    margin: 23px 13px; 
+        height: 0; 
+        width: 0;
+        position: relative;
+        border-right: 20px solid transparent;
+        border-bottom: 14px solid #FBDE37;
+        border-left: 20px solid transparent;
+        transform: rotate(35deg);
+        }
+        .star:before, 
+        .star:after {
+        content: "";
+        height: 0; 
+        width: 0;
+        position: absolute;
+        }
+        .star:before {
+        top: -10px; 
+        left: -14px;
+        border-bottom: 16px solid #FBDE37;
+        border-left: 6px solid transparent;
+        border-right: 6px solid transparent;
+        transform: rotate(-35deg);
+        }
+        .star:after {
+        top: 2px; 
+        left: -23px;
+        border-right: 20px solid transparent;
+        border-bottom: 14px solid #FBDE37;
+        border-left: 20px solid transparent;
+        transform: rotate(-70deg);
+        }
+
+.laosa {
+    position: relative;
+    top:0
+    border: 1px solid black;
+    background: linear-gradient( to bottom, #EB0A13 25%, #290D9C 25%, #290D9C 75%, #EB0A13 75%);
+}
+.circle {
+    position :absolute;
+    width: 50px;
+    height: 50px; 
+    background: white;
+    border-radius: 50%; 
+    left: 75px; top: 39px;
+}
+.russia {
+background: linear-gradient(to bottom, white 33%,#2217C4 33%, #2217C4 67%, #E52315  67%);
+background-repeat: no-repeat;
+border: 1px solid black;
+}
+.russia:hover {
+    content: '';
+    background:linear-gradient(to right, #2217C4 33%, #fff 33%, #fff 67%, #E52315 67%);
+    background-repeat: no-repeat;
+    border: 1px solid black;
+    transition: .3s linear;
+}
+.maldivi{
+background: linear-gradient(to right, #DF0718,  #DF0718);
+background-repeat: no-repeat;
+border: 1px solid black;
+}
+.prymoygolnick{
+    position: absolute;
+    width: 130px;
+    height: 90px; 
+    background: rgb(27, 83, 44);
+    border-radius: 0%;
+    left: 37px; top: 20px;
+}
+.polymeciac {
+    position: absolute;
+    width: 40px;
+    height: 40px; 
+    margin: -10px 0 10px 0;
+    border-radius: 50%;
+    box-shadow: 5px 5px 0 0 white;
+    transform: rotate(130deg);
+    left: 100px; top: 55px;
+}

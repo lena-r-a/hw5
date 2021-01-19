@@ -1,0 +1,140 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+.c {
+    width: 200px;
+    height: 130px;
+    border: 1px solid black;
+    margin: 10px;
+    display: inline-block;
+    position: relative;
+}
+
+.c:hover::after {
+    content: attr(data-title);
+    position: absolute;
+    left: 10px; top: 10px;
+}
+
+.japan {
+    border: 1px solid black;
+    background: radial-gradient(circle, #f00 30%, #fff 30%, #fff 100%);
+}
+
+
+.chile {
+     background:linear-gradient(to right, #00f 33%, #fff 33%),
+    linear-gradient(to top, #f00, #f00);
+    background-repeat: no-repeat;
+    background-position: 0 0,
+     0 64px;
+     background-size: 100% 65px,
+     100% 67px;
+     position: relative;
+}
+.star { 
+       /* position: absolute; */
+       top: 0;
+        margin: 23px 13px; 
+        height: 0; 
+        width: 0;
+        position: relative;
+        border-right: 20px solid transparent;
+        border-bottom: 14px solid #fff;
+        border-left: 20px solid transparent;
+        transform: rotate(35deg);
+        }
+        .star:before, 
+        .star:after {
+        content: "";
+        height: 0; 
+        width: 0;
+        position: absolute;
+        }
+        .star:before {
+        top: -10px; 
+        left: -14px;
+        border-bottom: 16px solid #fff;
+        border-left: 6px solid transparent;
+        border-right: 6px solid transparent;
+        transform: rotate(-35deg);
+        }
+        .star:after {
+        top: 2px; 
+        left: -23px;
+        border-right: 20px solid transparent;
+        border-bottom: 14px solid #fff;
+        border-left: 20px solid transparent;
+        transform: rotate(-70deg);
+        }
+
+ .swiden {
+    background:linear-gradient(to right, #00f 30%, #ff0 30%, #ff0 40%, #00f 40%),
+    linear-gradient(to top, #ff0, #ff0),
+    linear-gradient(to right, #00f 30%, #ff0 30%, #ff0 40%, #00f 40%);
+    background-repeat: no-repeat;
+    background-position: 0 0,
+     0 55px,
+     0 75px;
+     background-size: 100% 56px,
+     100% 20px,
+     100% 56px;
+      }
+
+    .poland {
+        background:linear-gradient(to top, #fff, #fff),
+        linear-gradient(to top, #f00, #f00);
+        background-repeat: no-repeat;
+        background-position: 0 0,
+         0 65px;
+         background-size: 100% 65px,
+         100% 66px;
+    }
+
+    .peru {
+        background:linear-gradient(to right, #f00 33%, #fff 33%, #fff 67%, #f00 67%);
+        background-repeat: no-repeat;
+
+    }
+
+    .peru:hover {
+        content: '';
+        background:linear-gradient(to top, #fff, #fff),
+        linear-gradient(to top, #f00, #f00);
+        background-repeat: no-repeat;
+        background-position: 0 0,
+         0 65px;
+         background-size: 100% 65px,
+         100% 66px;
+         transition: .3s linear;
+
+    }
+
+    .greenland {
+        background:linear-gradient(to right, #fff, #fff),
+        linear-gradient(to top, #f00, #f00);
+        background-repeat: no-repeat;
+        background-position: 0 0,
+         0 65px;
+         background-size: 100% 65px,
+         100% 66px;
+         position: relative;
+    }
+
+    .greenland:before {
+        content: '';
+        width: 70px;
+        height: 70px;
+        background:linear-gradient(to right, #f00, #f00),
+        linear-gradient(to top, #fff, #fff);
+        background-repeat: no-repeat;
+        background-position: 0 0,
+         0 35px;
+         background-size: 100% 35px,
+         100% 35px;
+        border-radius: 50%;
+        position: absolute;
+        top: 30px;
+        left: 39px;
+    }
